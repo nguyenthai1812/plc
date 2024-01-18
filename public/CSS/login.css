@@ -1,0 +1,160 @@
+.loginframe {
+    width: 550px;
+    height: 500px;
+    background-color: #305680;
+    position: absolute;
+    top: 250px;
+    left: 755px;
+}
+
+.loginframe>img {
+    display: inline-block;
+    position: absolute;
+    top: 4%;
+    left: 31%;
+    width: 35%;
+    pointer-events: none;
+    user-select: none;
+}
+
+.loginframe>.loginframe__userframe,
+.loginframe>.loginframe__passwordframe {
+    display: inline-block;
+    width: 85%;
+    height: 8%;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    border-bottom: 1.5px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+.loginframe>.loginframe__passwordframe {
+    top: 55%
+}
+
+.loginframe__userframe>img,
+.loginframe__passwordframe>img {
+    display: inline-block;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(228deg) brightness(103%) contrast(101%);
+    width: 4.5%;
+    position: absolute;
+    top: 30%;
+    pointer-events: none;
+    user-select: none;
+}
+
+.loginframe__userframe--login,
+.loginframe__passwordframe--password {
+    position: absolute;
+    top: 32%;
+    left: 6%;
+    width: 93%;
+    height: 45%;
+    color: white;
+    background-color: #305680;
+    outline: none;
+    border: 0px;
+    font-size: 100%;
+}
+
+.loginframe__forgetpassword--bttforget {
+    position: absolute;
+    top: 68%;
+    left: 72%;
+    background-color: #305680;
+    border: 0px;
+    color: white;
+    height: 7%;
+    border-radius: 999px;
+    user-select: none;
+}
+
+.loginframe__forgetpassword--bttforget:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.loginframe__forgetpassword--bttforget:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.loginframe__login--bttlogin {
+    color: white;
+    font-size: 120%;
+    position: absolute;
+    top: 80%;
+    width: 75%;
+    height: 7%;
+    left: 13%;
+    user-select: none;
+    background-color: #ff5722;
+    border: 0px;
+    border-radius: 999px;
+}
+
+.loginframe__login--bttlogin:active {
+    background-color: #ff572299
+}
+
+label {
+    font-family: sans-serif;
+    position: absolute;
+    top: 35%;
+    left: 6.5%;
+    color: #666;
+    user-select: none;
+}
+
+.loginframe__userframe--login:focus+label,
+.loginframe__userframe--login:not(:placeholder-shown)+label,
+.loginframe__passwordframe--password:focus+label,
+.loginframe__passwordframe--password:not(:placeholder-shown)+label {
+    transform: translateY(-120%);
+    transition-property: transform;
+    transition-duration: 450ms;
+}
+
+@media screen and (min-width:1650px) and (max-width:1770px) {
+    .loginframe {
+        width: 600px;
+        height: 550px;
+        position: absolute;
+        left: 560px;
+        top: 130px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .loginframe {
+        width: 300px;
+        height: 450px;
+        position: absolute;
+        left: 63px;
+        top: 150px;
+    }
+
+    .loginframe__userframe>img,
+    .loginframe__passwordframe>img {
+        top: 55%;
+    }
+
+    label {
+        top: 30%;
+        left: 9.3%;
+    }
+
+    .loginframe__forgetpassword--bttforget {
+        left: 58%;
+        width: 39%;
+    }
+
+    .loginframe__userframe--login:focus+label,
+    .loginframe__userframe--login:not(:placeholder-shown)+label,
+    .loginframe__passwordframe--password:focus+label,
+    .loginframe__passwordframe--password:not(:placeholder-shown)+label {
+        transform: translateY(-20px);
+        transition-property: transform;
+        transition-duration: 450ms;
+    }
+}

@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: #305680;
+    position: relative;
+    left: 240px;
+    width: 1893px;
+    height: 65px;
+    box-shadow: 0.5px 0.5px 6px 1px black;
+    user-select: none;
+}
+
+header .logoximang {
+    height: 95%;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    pointer-events: none;
+}
+
+header .title-header {
+    font-size: 150%;
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+header .logo-home {
+    height: 50%;
+    pointer-events: none;
+    position: absolute;
+    top: 22%;
+    left: 2%;
+    filter: brightness(0) saturate(100%) invert(94%) sepia(6%) saturate(0%) hue-rotate(113deg) brightness(106%) contrast(106%);
+}
+
+header .home-heading {
+    font-size: 150%;
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    top: 32%;
+    left: 4%;
+}
+
+main {
+    background-color: #305680;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 245px;
+    height: 70px;
+    box-shadow: 0.5px 0.5px 6px 1px black;
+    user-select: none;
+}
+
+.logoplc {
+    position: absolute;
+    left: 14.5%;
+    top: 7.5%;
+    width: 55%;
+    pointer-events: none;
+}
+
+nav {
+    background-color: #305680;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    width: 240px;
+    height: 942px;
+    box-shadow: 0.5px 0.5px 6px 1px black;
+    user-select: none;
+}
+
+.nav-home {
+    position: relative;
+    height: 5%;
+}
+
+.nav-home .nav-btt-home {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #305680;
+    border: 0px;
+    box-shadow: -5px 5px 15px 0px black;
+}
+
+.nav-home .nav-btt-home .nav-logo-home {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(6%) saturate(0%) hue-rotate(113deg) brightness(106%) contrast(106%);
+    position: absolute;
+    top: 22%;
+    left: 6%;
+    height: 50%;
+    pointer-events: none;
+}
+
+.nav-home .nav-btt-home .nav-home-heading {
+    color: white;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+
+.nav-alarm {
+    position: relative;
+    height: 5%;
+}
+
+.nav-alarm .nav-btt-alarm {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #305680;
+    border: 0px;
+    box-shadow: -5px 5px 15px 0px black;
+}
+
+.nav-alarm .nav-btt-alarm .nav-logo-alarm {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(6%) saturate(0%) hue-rotate(113deg) brightness(106%) contrast(106%);
+    position: absolute;
+    top: 22%;
+    left: 6%;
+    height: 50%;
+    pointer-events: none;
+}
+
+.nav-alarm .nav-btt-alarm .nav-alarm-heading {
+    color: white;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+
+.nav-dashboard {
+    position: relative;
+    height: 5%;
+}
+
+.nav-dashboard .nav-btt-dashboard {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #305680;
+    border: 0px;
+    box-shadow: -5px 5px 15px 0px black;
+}
+
+.nav-dashboard .nav-btt-dashboard .nav-logo-dashboard {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(6%) saturate(0%) hue-rotate(113deg) brightness(106%) contrast(106%);
+    position: absolute;
+    top: 22%;
+    left: 6%;
+    height: 50%;
+    pointer-events: none;
+}
+
+.nav-dashboard .nav-btt-dashboard .nav-dashboard-heading {
+    color: white;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+
+.nav-btt-home:active,
+.nav-btt-alarm:active,
+.nav-btt-dashboard:active {
+    background-color: #0000003b;
+}
+
+.buttonFunction {
+    width: 20%;
+    height: 75%;
+    /* background-color: red; */
+    position: absolute;
+    left: 18%;
+    top: 15%;
+    border: 2px solid red;
+}
+
+
+
+/*  */
+
+
+
+
+
+
+.q03 {
+    position: absolute;
+    top: 80px;
+    left: 250px;
+}
+
+.p03 {
+    position: absolute;
+
+}
+
+/* B1: CSS cho Label ra cái khung  */
+
+.labelq03 {
+    position: absolute;
+    display: inline-block;
+    user-select: none;
+    width: 120px;
+    height: 50px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    outline: 3px solid #666;
+}
+
+/* B2: CSS cho chữ OFF vào khung */
+.labelq03 .off {
+    visibility: hidden;
+    font-family: sans-serif;
+    position: absolute;
+    top: 33%;
+    left: 62%;
+}
+
+/* B3: CSS cho chữ ON vào khung */
+.labelq03 .on {
+    visibility: hidden;
+    font-family: sans-serif;
+    position: absolute;
+    top: 33%;
+    left: 15%;
+}
+
+/* B5: CSS cho cục chạy bên trong của cái khung ở chế độ OFF */
+
+.labelq03::before {
+    position: relative;
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 60px;
+    background-color: #e8e8e8;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.inputq03:not(:checked)+label .off {
+    visibility: visible;
+}
+
+.inputq03:not(:checked)+label::before {
+    transform: translateX(0);
+    transition: transform 400ms;
+}
+
+.inputq03:checked+label::before {
+    transform: translateX(60px);
+    transition: transform 400ms;
+}
+
+.inputq03:checked+label {
+    background-color: rgba(0, 255, 0, 1)
+}
+
+.inputq03:checked+label .on {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1650px) and (max-width:1770px) {
+    header {
+        width: 1466px;
+    }
+
+    nav {
+        height: 702px;
+    }
+}
